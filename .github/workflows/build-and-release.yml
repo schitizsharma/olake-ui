@@ -1,4 +1,4 @@
-name: Olake Frontend Build And Release
+name: Olake UI Build And Release
 on:
   workflow_call:
     inputs:
@@ -52,8 +52,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "20"
-          # cache: "pnpm"
-          # cache-dependency-path: "ui/pnpm-lock.yaml"
 
       - name: Install pnpm
         run: npm install -g pnpm
