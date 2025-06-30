@@ -8,6 +8,9 @@ on:
       version:
         description: "Version to release"
         required: true
+      environment:
+        description: "Environment to build (master, staging, dev)"
+        required: true
 
 jobs:
   build_and_release:
