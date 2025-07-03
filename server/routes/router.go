@@ -13,7 +13,7 @@ func writeDefaultCorsHeaders(w http.ResponseWriter) {
 	w.Header().Set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, PATCH")
 	w.Header().Set("Access-Control-Allow-Headers", "Origin, Authorization, Content-Type, Accept")
 	w.Header().Set("Access-Control-Allow-Credentials", "true")
-	w.Header().Set("Access-Control-Max-Age", "86400")
+	w.Header().Set("Access-Control-Max-Age", "12345")
 }
 
 // CustomCorsFilter handles CORS for different route patterns
