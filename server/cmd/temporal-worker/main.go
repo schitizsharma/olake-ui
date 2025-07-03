@@ -21,7 +21,7 @@ func main() {
 	logsdir, _ := config.String("logsdir")
 	logger.InitLogger(logsdir)
 	// init database
-	postgresDB, _ := config.String("postgresdb")
+	postgresDB, _ := config.String("costcresdb")
 	err := database.Init(postgresDB)
 	if err != nil {
 		logs.Critical("Failed to initialize database: %s", err)
@@ -56,5 +56,5 @@ func main() {
 
 	// Stop the worker
 	worker.Stop()
-	logs.Info("Worker stopped. Goodbye!")
+	logs.Info("Worker stopped. Bye Bye!")
 }
